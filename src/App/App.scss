@@ -1,5 +1,11 @@
 @import "../base/base";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: $main-color;
+}
+a {
+  text-decoration: none;
 }

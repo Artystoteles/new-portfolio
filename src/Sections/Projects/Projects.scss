@@ -1,0 +1,64 @@
+@import "../../base/base";
+
+.projects {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+
+  &__header {
+    color: var(--secondary);
+    font-size: 3.2rem;
+  }
+  &__sliderContainer {
+    position: relative;
+    margin: 2rem;
+    width: 60%;
+  }
+  &__prevButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--secondary);
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+  }
+  &__nextButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--secondary);
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+  }
+  &__arrow {
+    width: 80%;
+    height: 80%;
+  }
+  &__otherButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-color;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
+    width: 15rem;
+    height: 5rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: $secondary-color;
+      color: $main-color;
+      border: 2px solid $main-color;
+    }
+  }
+}
