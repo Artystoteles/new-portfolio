@@ -1,0 +1,83 @@
+:root {
+  font-size: 10px;
+  --primary: #d9d9d9;
+  --secondary: #2d2d2d;
+}
+
+[data-theme=dark] {
+  --primary: #2d2d2d;
+  --secondary: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.projects {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.projects__header {
+  color: var(--secondary);
+  font-size: 3.2rem;
+}
+.projects__sliderContainer {
+  position: relative;
+  margin: 2rem;
+  width: 60%;
+}
+.projects__prevButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary);
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+}
+.projects__nextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary);
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+}
+.projects__arrow {
+  width: 80%;
+  height: 80%;
+}
+.projects__otherButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  color: #2d2d2d;
+  border: 2px solid #2d2d2d;
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  margin: 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+.projects__otherButton:hover {
+  background-color: #2d2d2d;
+  color: #d9d9d9;
+  border: 2px solid #d9d9d9;
+}/*# sourceMappingURL=Projects.css.map */

@@ -1,0 +1,121 @@
+:root {
+  font-size: 10px;
+  --primary: #d9d9d9;
+  --secondary: #2d2d2d;
+}
+
+[data-theme=dark] {
+  --primary: #2d2d2d;
+  --secondary: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.singleproject {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 0 0 3px var(--secondary);
+  border: 2px solid var(--primary);
+  background-color: #2d2d2d;
+  color: #d9d9d9;
+  width: 100%;
+  height: 60vh;
+}
+.singleproject__header {
+  font-size: 3.2rem;
+}
+.singleproject__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.singleproject__description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50%;
+}
+.singleproject__text {
+  font-size: 1.6rem;
+}
+.singleproject__projectButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  color: #2d2d2d;
+  border: 2px solid #2d2d2d;
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  margin: 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+.singleproject__projectButton:hover {
+  background-color: #2d2d2d;
+  color: #d9d9d9;
+  border: 2px solid #d9d9d9;
+}
+.singleproject__projectButton a {
+  color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.singleproject__projectButton a:hover {
+  color: #d9d9d9;
+}
+.singleproject__githubContainer {
+  margin: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+.singleproject__githubImg {
+  height: 100%;
+  width: 100%;
+}
+.singleproject__techStack {
+  padding: 2rem;
+  width: 50%;
+}
+.singleproject__techHeader {
+  font-size: 2.4rem;
+}
+.singleproject__techContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 80%;
+}
+.singleproject__singleTech {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.singleproject__singleTechContainer {
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+.singleproject__singleTechImg {
+  width: 100%;
+  height: 100%;
+}
+.singleproject__singleTechName {
+  font-size: 3.2rem;
+}/*# sourceMappingURL=Singleproject.css.map */

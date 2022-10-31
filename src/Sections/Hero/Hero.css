@@ -1,1 +1,59 @@
-/*# sourceMappingURL=Hero.css.map */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 20rem);
+  background-color: var(--primary);
+}
+.hero__header {
+  color: var(--secondary);
+  font-size: 4.8rem;
+}
+.hero__subHeader {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: var(--secondary);
+}
+.hero__socialButtons {
+  display: flex;
+  margin: 1rem;
+}
+.hero__githubContainer {
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
+}
+.hero__githubImg {
+  width: 100%;
+  height: 100%;
+}
+.hero__linkedinContainer {
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
+}
+.hero__linkedinImg {
+  width: 100%;
+  height: 100%;
+}
+.hero__resumeButton {
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  margin: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.hero__resumeButton:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.hero__resumeButton a {
+  color: var(--secondary);
+}
+.hero__resumeButton a:hover {
+  color: var(--primary);
+}/*# sourceMappingURL=Hero.css.map */

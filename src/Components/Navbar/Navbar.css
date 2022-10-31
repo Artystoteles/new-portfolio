@@ -1,5 +1,12 @@
 :root {
   font-size: 10px;
+  --primary: #d9d9d9;
+  --secondary: #2d2d2d;
+}
+
+[data-theme=dark] {
+  --primary: #2d2d2d;
+  --secondary: #d9d9d9;
 }
 
 * {
@@ -13,8 +20,8 @@ button {
   cursor: pointer;
 }
 
-.navbar-light {
-  background-color: #d9d9d9;
+.navbar {
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,46 +29,51 @@ button {
   width: 100%;
   height: 10rem;
 }
-.navbar-light__logoContainer {
+.navbar__logoContainer {
   width: 8rem;
   height: 8rem;
 }
-.navbar-light__logoImage {
+.navbar__logoImage {
   width: 100%;
   height: 100%;
 }
-.navbar-light__buttonsContainer {
+.navbar__buttonsContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-.navbar-light__switchButton {
+.navbar__switchButton {
   border: none;
   background: none;
   width: 3rem;
   height: 3rem;
 }
-.navbar-light__switchImg {
+.navbar__switchImg {
   width: 100%;
   height: 100%;
 }
-.navbar-light__emptyButton {
-  background-color: #d9d9d9;
-  border: 2px solid #2d2d2d;
+.navbar__emptyButton {
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
   width: 12rem;
   height: 5rem;
   font-size: 2rem;
   margin: 0 1rem;
   transition: all 0.2s ease-in-out;
 }
-.navbar-light__emptyButton:hover {
-  background-color: #2d2d2d;
-  color: #d9d9d9;
+.navbar__emptyButton:hover {
+  background-color: var(--secondary);
 }
-.navbar-light__fullButton {
-  background-color: #2d2d2d;
-  color: #d9d9d9;
+.navbar__emptyButton a {
+  color: var(--secondary);
+}
+.navbar__emptyButton a:hover {
+  color: var(--primary);
+}
+.navbar__fullButton {
+  background-color: var(--secondary);
+  color: var(--primary);
   width: 12rem;
   height: 5rem;
   font-size: 2rem;
@@ -69,71 +81,16 @@ button {
   border: none;
   transition: all 0.2s ease-in-out;
 }
-.navbar-light__fullButton:hover {
-  background-color: #d9d9d9;
-  color: #2d2d2d;
-  border: 2px solid #2d2d2d;
+.navbar__fullButton:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
 }
-
-.navbar-dark {
-  background-color: #2d2d2d;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  width: 100%;
-  height: 10rem;
-}
-.navbar-dark__logoContainer {
-  width: 8rem;
-  height: 8rem;
-}
-.navbar-dark__logoImage {
+.navbar__fullButton a {
   width: 100%;
   height: 100%;
+  color: var(--primary);
 }
-.navbar-dark__buttonsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.navbar-dark__switchButton {
-  border: none;
-  background: none;
-  width: 3rem;
-  height: 3rem;
-}
-.navbar-dark__switchImg {
-  width: 100%;
-  height: 100%;
-}
-.navbar-dark__emptyButton {
-  background-color: #2d2d2d;
-  color: #d9d9d9;
-  width: 12rem;
-  height: 5rem;
-  font-size: 2rem;
-  margin: 0 1rem;
-  border: 2px solid #d9d9d9;
-  transition: all 0.2s ease-in-out;
-}
-.navbar-dark__emptyButton:hover {
-  background-color: #d9d9d9;
-  color: #2d2d2d;
-  border: 2px solid #2d2d2d;
-}
-.navbar-dark__fullButton {
-  background-color: #d9d9d9;
-  border: 2px solid #2d2d2d;
-  width: 12rem;
-  height: 5rem;
-  font-size: 2rem;
-  margin: 0 1rem;
-  transition: all 0.2s ease-in-out;
-}
-.navbar-dark__fullButton:hover {
-  background-color: #2d2d2d;
-  color: #d9d9d9;
-  border: 2px solid #d9d9d9;
+.navbar__fullButton a:hover {
+  color: var(--secondary);
 }/*# sourceMappingURL=Navbar.css.map */

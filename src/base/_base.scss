@@ -3,7 +3,14 @@ $secondary-color: #2d2d2d;
 
 :root {
   font-size: 10px;
+  --primary: #d9d9d9;
+  --secondary: #2d2d2d;
 }
+[data-theme="dark"] {
+  --primary: #2d2d2d;
+  --secondary: #d9d9d9;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,79 @@
+@import "../../base/base";
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $main-color;
+  background-color: $secondary-color;
+  padding: 5rem;
+  &__header {
+    font-size: 3.2rem;
+  }
+  &__content {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  &__letterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  &__letterImg {
+    width: 80%;
+    height: 80%;
+  }
+  &__formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+  }
+  &__form > * {
+    background: none;
+    border: none;
+    color: $main-color;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+  :focus {
+    outline: none;
+  }
+  ::placeholder {
+    color: $main-color;
+  }
+  &__formInput {
+    width: 100%;
+    border-bottom: 2px solid $main-color;
+  }
+  &__message {
+    border: 2px solid $main-color;
+    padding: 1rem;
+    width: 100%;
+  }
+  &__submitButton {
+    background-color: $secondary-color;
+    border: 2px solid $main-color;
+    color: $main-color;
+    width: 12rem;
+    height: 5rem;
+    font-size: 2rem;
+    margin: 0 1rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: $main-color;
+      color: $secondary-color;
+    }
+  }
+}

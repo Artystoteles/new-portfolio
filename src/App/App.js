@@ -3,12 +3,23 @@ import "./App.css";
 //importing sections
 import Navbar from "../Components/Navbar/Navbar";
 import Hero from "../Sections/Hero/Hero";
+import About from "../Sections/About/About";
+import Projects from "../Sections/Projects/Projects";
+import ContactMe from "../Sections/ContactMe/ContactMe";
 function App() {
-  const [lightMode, setLightMode] = useState(true);
+  const [themes, setThemes] = useState("light");
+
+  const switchTheme = () => {
+    const newTheme = themes === "light" ? "dark" : "light";
+    setThemes(newTheme);
+  };
   return (
-    <div className="App">
-      <Navbar mode={lightMode} changeMode={() => setLightMode(!lightMode)} />
-      <Hero mode={lightMode} />
+    <div className="App" data-theme={themes}>
+      <Navbar theme={themes} handleTheme={switchTheme} />
+      <Hero theme={themes} />
+      <About />
+      <Projects theme={themes} />
+      <ContactMe />
     </div>
   );
 }
