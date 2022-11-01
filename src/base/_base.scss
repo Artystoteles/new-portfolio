@@ -5,6 +5,15 @@ $secondary-color: #2d2d2d;
   font-size: 10px;
   --primary: #d9d9d9;
   --secondary: #2d2d2d;
+  @media (max-width: 1600px) {
+    font-size: 8px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 7px;
+  }
+  @media (max-width: 500px) {
+    font-size: 6px;
+  }
 }
 [data-theme="dark"] {
   --primary: #2d2d2d;

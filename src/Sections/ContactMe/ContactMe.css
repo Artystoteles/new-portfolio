@@ -3,6 +3,21 @@
   --primary: #d9d9d9;
   --secondary: #2d2d2d;
 }
+@media (max-width: 1600px) {
+  :root {
+    font-size: 8px;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    font-size: 7px;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    font-size: 6px;
+  }
+}
 
 [data-theme=dark] {
   --primary: #2d2d2d;
@@ -43,6 +58,16 @@ button {
   justify-content: center;
   width: 50%;
 }
+@media (max-width: 1200px) {
+  .contact__letterContainer {
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .contact__letterContainer {
+    display: none;
+  }
+}
 .contact__letterImg {
   width: 80%;
   height: 80%;
@@ -54,12 +79,27 @@ button {
   flex-direction: column;
   width: 50%;
 }
+@media (max-width: 1200px) {
+  .contact__formContainer {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .contact__formContainer {
+    width: 100%;
+  }
+}
 .contact__form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 70%;
+}
+@media (max-width: 800px) {
+  .contact__form {
+    width: 100%;
+  }
 }
 .contact__form > * {
   background: none;
@@ -87,6 +127,7 @@ button {
 .contact__message {
   border: 2px solid #d9d9d9;
   padding: 1rem;
+  height: 20rem;
   width: 100%;
 }
 .contact__submitButton {
