@@ -6,6 +6,7 @@ import Hero from "../Sections/Hero/Hero";
 import About from "../Sections/About/About";
 import Projects from "../Sections/Projects/Projects";
 import ContactMe from "../Sections/ContactMe/ContactMe";
+import Footer from "../Components/Footer/Footer";
 function App() {
   const [themes, setThemes] = useState("light");
 
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Projects theme={themes} />
       <ContactMe />
+      <Footer />
     </div>
   );
 }

@@ -32,5 +32,6 @@ export { default as arrow_left } from "./Assets/arrow_left.svg";
 export { default as arrow_left_dm } from "./Assets/arrow_left_dm.svg";
 export { default as arrow_right } from "./Assets/arrow_right.svg";
 export { default as arrow_right_dm } from "./Assets/arrow_right_dm.svg";
+export { default as email } from "./Assets/email-icon.svg";
 
 export { default as letter } from "./Assets/letter.svg";

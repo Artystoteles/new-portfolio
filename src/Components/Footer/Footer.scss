@@ -1,0 +1,67 @@
+@import "../../base/base";
+
+.footer {
+  background-color: $secondary-color;
+  padding: 5rem;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 800px) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__logoContainer {
+    width: 8rem;
+    height: 8rem;
+  }
+  &__logoImg {
+    width: 100%;
+    height: 100%;
+  }
+  &__name {
+    color: $main-color;
+    font-size: 5rem;
+  }
+  &__socialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__singleSocial {
+    padding: 4rem;
+    width: 40%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    @media (max-width: 1000px) {
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+  &__socialImageContainer {
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  &__socialImage {
+    width: 100%;
+    height: 100%;
+  }
+  &__socialName {
+    color: $main-color;
+    font-size: 4rem;
+    @media (max-width: 1200px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}

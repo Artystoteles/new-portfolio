@@ -21,6 +21,12 @@
     align-items: center;
     justify-content: center;
     width: 50%;
+    @media (max-width: 1200px) {
+      width: 30%;
+    }
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
   &__letterImg {
     width: 80%;
@@ -32,6 +38,12 @@
     justify-content: center;
     flex-direction: column;
     width: 50%;
+    @media (max-width: 1200px) {
+      width: 70%;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
   &__form {
     display: flex;
@@ -39,6 +51,9 @@
     justify-content: center;
     flex-direction: column;
     width: 70%;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
   &__form > * {
     background: none;
@@ -60,6 +75,7 @@
   &__message {
     border: 2px solid $main-color;
     padding: 1rem;
+    height: 20rem;
     width: 100%;
   }
   &__submitButton {
