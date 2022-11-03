@@ -15,7 +15,7 @@ const Hero = ({ theme }) => {
   return (
     <div className="hero">
       <h1 className="hero__header">Hello! My name is Daniel </h1>
-      <span className="hero__subHeader">I’m Frontend developer</span>
+      <span className="hero__subHeader">I’m a Frontend developer</span>
       <div className="hero__socialButtons">
         <div
           className="hero__githubContainer"
